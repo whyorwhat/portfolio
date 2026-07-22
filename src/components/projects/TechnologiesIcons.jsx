@@ -14,7 +14,7 @@ import {
 import {RiTailwindCssFill, RiNextjsFill} from "react-icons/ri";
 import {DiMongodb} from "react-icons/di";
 import {GrMysql} from "react-icons/gr";
-import {SiAmazondynamodb, SiMariadb, SiSpring, SiElastic} from "react-icons/si";
+import {SiMariadb, SiSpring, SiElastic} from "react-icons/si";
 
 // Label human-friendly
 const labels = {
@@ -28,7 +28,6 @@ const labels = {
     bootstrap: "Bootstrap",
     mariadb: "MariaDB",
     amazonwebservices: "AWS",
-    dynamodb: "Amazon DynamoDB",
     docker: "Docker",
     mongodb: "MongoDB",
     mysql: "MySQL",
@@ -50,7 +49,6 @@ const iconMap = {
     bootstrap: FaBootstrap,
     mariadb: SiMariadb,
     amazonwebservices: FaAws,
-    dynamodb: SiAmazondynamodb,
     docker: FaDocker,
     mongodb: DiMongodb,
     mysql: GrMysql,

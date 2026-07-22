@@ -10,7 +10,7 @@ export function ProjectsSection() {
                 description:
                     'A support chatbot for WhatsApp that allows multi-user teams to efficiently manage and respond to large volumes of customer requests from a single shared interface.',
                 viewLink: '/replyia',
-                technologies: ['java', 'python', 'spring', 'react', 'tailwind', 'dynamodb', 'amazonwebservices', 'docker'],
+                technologies: ['java', 'python', 'spring', 'react', 'tailwind', 'amazonwebservices', 'docker'],
             },
             {
                 id: 2,
@@ -26,7 +26,7 @@ export function ProjectsSection() {
                 description:
                     'An AI-powered platform that enables speech therapists to create personalized therapy tools for children with communication challenges.',
                 viewLink: 'https://parlarte.com',
-                technologies: ['python', 'vuejs', 'bootstrap', 'dynamodb', 'amazonwebservices', 'docker']
+                technologies: ['python', 'vuejs', 'bootstrap', 'amazonwebservices', 'docker']
             },
             {
                 id: 4,
@@ -73,7 +73,7 @@ export function ProjectsSection() {
                 description:
                     'An enterprise CRM solution powered by AI, designed to analyze customer behavior and preferences to generate personalized cross-selling and upselling recommendations.',
                 viewLink: '/customer-radar',
-                technologies: ['python', 'dynamodb', 'mongodb']
+                technologies: ['python', 'amazonwebservices', 'mongodb']
             },
         ],
         []
