@@ -1,17 +1,18 @@
 import React, { useMemo } from "react";
-import SkillsSection from "@/components/aboutMe/SkillsSection.jsx";
 import WindowCard from "@/components/elements/WindowCard.jsx";
 import {
-  FaBuilding,
-  FaCloud, FaComments,
-  FaDatabase, FaDesktop,
-  FaGitAlt,
-  FaGlobe,
-  FaLaptopCode,
-  FaLock, FaNetworkWired,
-  FaPaintBrush,
-  FaServer, FaVial
+    FaBuilding,
+    FaCloud, FaComments,
+    FaDatabase,
+    FaGitAlt,
+    FaGlobe,
+    FaLaptopCode,
+    FaLock, FaNetworkWired,
+    FaPaintBrush, FaRobot,
+    FaServer, FaVial
 } from "react-icons/fa";
+import { PiGraph } from "react-icons/pi";
+
 import AnimatedText from "@/components/elements/AnimatedText.jsx";
 
 export default function AboutMeView() {
@@ -20,23 +21,34 @@ export default function AboutMeView() {
         {
           icon: FaLaptopCode,
           title: "Programming Languages",
-          content: "Java, Python, PHP, JavaScript",
+          content: "Java, Python, JavaScript, Functional programming, Scala",
         },
         {
           icon: FaGlobe,
           title: "Frontend",
-          content: "HTML, CSS, React, Tailwind, Bootstrap, Vite, VueJS, Axios",
+          content: "React, Next, Vue, Tailwind, CSS, Bootstrap, Vite",
+        },
+        {
+          icon: FaRobot,
+          title: "AI & Data Engineering",
+          content:
+              "Machine Learning fundamentals, Natural Language Processing (NLP), Large Language Models (LLM fundamentals), Data Engineering concepts",
+        },
+        {
+          icon: PiGraph,
+          title: "Data Analysis",
+          content: "Pandas, NumPy, Matplotlib, Bokeh, Hvplot, Scikit-learn, Visual Analytics",
         },
         {
           icon: FaServer,
           title: "Backend & Frameworks",
           content:
-              "Spring Boot, Docker, REST APIs, Microservices, Design Patterns, SOLID, SOA",
+              "Spring Boot, REST APIs, Microservices, Design Patterns, SOLID, SOA",
         },
         {
           icon: FaDatabase,
           title: "Databases",
-          content: "MySQL, MariaDB, DynamoDB, MongoDB, NoSQL, Hibernate/JPA",
+          content: "Relational (SQL), NoSQL (MongoDB, Cassandra), Graph (Neo4J), Search engines (ElasticSearch), Redis",
         },
         {
           icon: FaGitAlt,
@@ -51,7 +63,7 @@ export default function AboutMeView() {
         {
           icon: FaLock,
           title: "Security",
-          content: "OWASP, JWT, Encryption, IAM, KMS, OAuth",
+          content: "Fundamentals of cybersecurity and cryptography",
         },
         {
           icon: FaVial,
@@ -67,23 +79,14 @@ export default function AboutMeView() {
           icon: FaNetworkWired,
           title: "Networking & Protocols",
           content:
-              "TCP/IP, HTTP/HTTPS, DNS, DHCP, LAN/WAN, Routing, Firewall, Load Balancing, SSH",
+              "Advanced Networking Analysis, Core Networking, Socket Programming, HTTP/HTTPS",
         },
-        {
-          icon: FaDesktop,
-          title: "Operating Systems",
-          content: "Linux, Windows, macOS",
-        },
+
         {
           icon: FaBuilding,
           title: "Business Analysis",
           content:
               "BPMN, UML, Use Case Diagrams, Process Mapping, Requirements Analysis",
-        },
-        {
-          icon: FaPaintBrush,
-          title: "Design",
-          content: "Photoshop, Illustrator, Final Cut Pro",
         },
       ],
       []
@@ -105,21 +108,20 @@ export default function AboutMeView() {
 
           <div className="space-y-4 text-lg font-light leading-relaxed">
             <p>
-              I am a <strong>Full Stack Software Engineer</strong> from Italy with a passion for{" "}
-              <strong>business solutions</strong>, <strong>artificial intelligence (AI)</strong>,
-              and <strong>cybersecurity</strong>. I focus on delivering efficient, tailored solutions,
-              particularly in <strong>web and cloud-oriented environments</strong>.
+                I am a <strong>Full Stack Software Engineer</strong> from Italy with a passion for{" "}
+                <strong>business solutions</strong>, <strong>AI</strong>,
+                and <strong>cybersecurity</strong>. I specialize in developing efficient solutions for <strong>web and cloud-based applications</strong>.
             </p>
             <p>
               Combining a strategic mindset with hands-on technical expertise, I specialize in developing{" "}
               <strong>scalable software architectures</strong>, optimizing <strong>cloud infrastructures</strong>,
-              and enhancing <strong>system security</strong>.
+              and build <strong>secure, reliable</strong> systems.
             </p>
             <p>
-              I am fascinated by the transformative power of AI and the crucial role of cybersecurity in today’s digital world.
+              I am fascinated by the transformative potential of AI and the critical role cybersecurity plays in today's landscape.
             </p>
             <p>
-              My goal is to create <strong>future-ready solutions</strong> that drive innovation and empower businesses.
+              My goal is to create <strong>innovative solutions</strong> that solve real-world business challenges.
             </p>
           </div>
         </section>

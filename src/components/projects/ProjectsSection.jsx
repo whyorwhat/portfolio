@@ -8,7 +8,7 @@ export function ProjectsSection() {
                 id: 1,
                 title: 'ReplyIA',
                 description:
-                    'A Support Chatbot for WhatsApp that allows multi-user teams to efficiently manage and respond to large volumes of customer requests from a single shared interface.',
+                    'A support chatbot for WhatsApp that allows multi-user teams to efficiently manage and respond to large volumes of customer requests from a single shared interface.',
                 viewLink: '/replyia',
                 technologies: ['java', 'python', 'spring', 'react', 'tailwind', 'dynamodb', 'amazonwebservices', 'docker'],
             },
@@ -16,7 +16,7 @@ export function ProjectsSection() {
                 id: 2,
                 title: 'AuroraKeep',
                 description:
-                    'A user-friendly accounting web app for businesses and individuals, offering features such as expense tracking, invoicing, tax calculations, file management, and support for customizable formulas.',
+                    'A user-friendly accounting web app for teams and individuals, offering features such as expense tracking, invoicing, tax calculations, file management, and support for customizable formulas.',
                 viewLink: 'https://aurorakeep.com',
                 technologies: ['java', 'spring', 'vuejs', 'bootstrap', 'mariadb', 'amazonwebservices']
             },
@@ -24,7 +24,7 @@ export function ProjectsSection() {
                 id: 3,
                 title: 'ParlArte',
                 description:
-                    'A web app for speech therapists, leveraging AI to create personalized images and visual aids that support children with communication challenges, enhancing therapy effectiveness and engagement.',
+                    'An AI-powered platform that enables speech therapists to create personalized therapy tools for children with communication challenges.',
                 viewLink: 'https://parlarte.com',
                 technologies: ['python', 'vuejs', 'bootstrap', 'dynamodb', 'amazonwebservices', 'docker']
             },
@@ -32,33 +32,49 @@ export function ProjectsSection() {
                 id: 4,
                 title: 'TiSeguo',
                 description:
-                    'A revolutionary web app that streamlines and centralizes insurance claims processing for insurance companies. It enhances efficiency, reduces processing time, and improves communication, providing faster resolutions and a superior customer experience.',
+                    'A revolutionary web app that streamlines and centralizes insurance claims processing for insurance companies.',
                 viewLink: '/ti-seguo',
                 technologies: ['java','spring', 'vuejs', 'mongodb', 'mysql', 'amazonwebservices', 'bootstrap']
             },
             {
                 id: 5,
-                title: 'Business website',
+                title: 'Web development #1',
                 description:
-                    'A simple and professional website designed for the local branch of an insurance company, providing clear information, easy navigation, and enhanced accessibility for customers.',
+                    'A professional website designed for the local branch of an insurance company to provide information of their products.',
                 viewLink: 'https://vittoriaassicurazioniluino.com',
-                technologies: ['php', 'html5', 'javascript', 'mysql', 'css3']
+                technologies: ['next', 'tailwind', 'javascript']
             },
             {
                 id: 6,
+                title: 'Web development #2',
+                description:
+                    'A professional website created for a local speech therapy clinic.',
+                viewLink: 'https://studioepigos.it',
+                technologies: ['next', 'tailwind', 'javascript']
+            },
+            {
+                id: 7,
                 title: 'Portfolio website',
-                description: 'See the full code of my application on GitHub.',
+                description: 'See the full code of my website on GitHub.',
                 githubLink: 'https://github.com/whyorwhat/whyorwhat.github.io',
                 technologies: ['react', 'tailwind']
             },
             {
-                id: 7,
+                id: 8,
+                title: 'Javalytics',
+                description:
+                    'A university project that enables users to better understand the structure and health of their Java systems using machine learning techniques.',
+                githubLink: 'https://github.com/whyorwhat/javalytics',
+                technologies: ['python', 'react', 'mongodb', 'elasticsearch', 'docker']
+            },
+            {
+                id: 9,
                 title: 'Customer Radar',
                 description:
-                    'Enterprise CRM software powered by AI, designed to analyze customer behavior and preferences. The system provides targeted recommendations for cross-selling and up-selling, helping businesses enhance customer engagement and maximize revenue opportunities. By leveraging advanced analytics, it enables data-driven decision-making and personalized customer interactions.',
+                    'An enterprise CRM solution powered by AI, designed to analyze customer behavior and preferences to generate personalized cross-selling and upselling recommendations.',
                 viewLink: '/customer-radar',
                 technologies: ['python', 'dynamodb', 'mongodb']
-            }
+            },
         ],
         []
     );

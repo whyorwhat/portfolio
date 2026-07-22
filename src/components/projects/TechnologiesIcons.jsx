@@ -11,30 +11,32 @@ import {
     FaCss3Alt,
     FaBootstrap,
 } from 'react-icons/fa';
-import {RiTailwindCssFill} from "react-icons/ri";
+import {RiTailwindCssFill, RiNextjsFill} from "react-icons/ri";
 import {DiMongodb} from "react-icons/di";
 import {GrMysql} from "react-icons/gr";
-import {SiAmazondynamodb, SiMariadb, SiSpring} from "react-icons/si";
+import {SiAmazondynamodb, SiMariadb, SiSpring, SiElastic} from "react-icons/si";
 
 // Label human-friendly
 const labels = {
-  spring: "Spring",
-  java: "Java",
-  python: "Python",
-  php: "PHP",
-  react: "React",
-  tailwind: "Tailwind CSS",
-  vuejs: "Vue.js",
-  bootstrap: "Bootstrap",
-  mariadb: "MariaDB",
-  amazonwebservices: "AWS",
-  dynamodb: "Amazon DynamoDB",
-  docker: "Docker",
-  mongodb: "MongoDB",
-  mysql: "MySQL",
-  html5: "HTML 5",
-  javascript: "JavaScript",
-  css3: "CSS 3",
+    spring: "Spring",
+    java: "Java",
+    python: "Python",
+    php: "PHP",
+    react: "React",
+    tailwind: "Tailwind CSS",
+    vuejs: "Vue.js",
+    bootstrap: "Bootstrap",
+    mariadb: "MariaDB",
+    amazonwebservices: "AWS",
+    dynamodb: "Amazon DynamoDB",
+    docker: "Docker",
+    mongodb: "MongoDB",
+    mysql: "MySQL",
+    html5: "HTML 5",
+    javascript: "JavaScript",
+    css3: "CSS 3",
+    next: "Next",
+    elasticsearch: "ElasticSearch",
 };
 
 const iconMap = {
@@ -56,6 +58,8 @@ const iconMap = {
     javascript: FaJsSquare,
     css3: FaCss3Alt,
     css: FaCss3Alt,
+    next: RiNextjsFill,
+    elasticsearch: SiElastic,
 };
 
 export function TechnologiesIcons({ technologies }) {
