@@ -5,10 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "echo simonecotardo.com > dist/CNAME && gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build && cp dist/index.html dist/404.html",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
