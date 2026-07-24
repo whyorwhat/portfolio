@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { ArrowRight } from "lucide-react";
 
 export default function CTA({ id = "cta" }) {
     const { t } = useTranslation("whatsapp");
@@ -17,10 +18,14 @@ export default function CTA({ id = "cta" }) {
             </p>
 
             <a
-                href="/#/contacts"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
+                href="/contacts"
+                className="group inline-flex items-center gap-2 rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white transition-colors duration-200 hover:bg-blue-700"
             >
-                {t("cta.button")}
+                <span>{t("cta.button")}</span>
+                <ArrowRight
+                    aria-hidden="true"
+                    className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1"
+                />
             </a>
         </section>
     );
