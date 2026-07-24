@@ -5,7 +5,7 @@
   "hero": {
     "title-1": "Connect smarter",
     "title-2": "with customers",
-    "subtitle": "Transform the way your business interacts with customers ReplyIA’s intelligent WhatsApp chatbots—effortlessly enhancing support, driving engagement, and boosting efficiency, all in one simple solution."
+    "subtitle": "Transform the way your business interacts with customers. Use AI-powered WhatsApp chatbots that provide instant support, automate workflows, and convert more conversations into customers."
   },
   "chatSimulation": {
     "botName": "ReplyIA Inc.",
@@ -19,19 +19,19 @@
   "features": [
     {
       "title": "Your personal Control Center",
-      "description": "Instantly connect with your customers through an intuitive, fully customizable dashboard. Manage everything effortlessly—all in one place, always under your control."
+      "description": "Instantly connect with your customers through a fully customizable dashboard."
     },
     {
       "title": "Categorize requests",
-      "description": "Every customer inquiry is neatly categorized and clearly labeled, enabling your entire team to collaborate effortlessly. Assign, manage, and respond faster—together."
+      "description": "Every conversation is organized and labeled, so your team can collaborate and respond faster."
     },
     {
       "title": "Stay Connected, Stay Informed",
-      "description": "Your entire team stays aligned with real-time visibility into ongoing tasks. With targeted notifications, everyone knows exactly what’s happening—keeping collaboration seamless and efficient."
+      "description": "Keep your team in sync with real-time updates and notifications."
     },
     {
       "title": "Save Time, Communicate Better",
-      "description": "Create your own personalized message templates to streamline conversations and respond instantly. Speed up interactions, ensure consistency, and effortlessly boost your team’s productivity—all with a few clicks."
+      "description": "Build reusable message templates to speed up conversations, improve consistency, and boost team productivity."
     }
   ],
 
@@ -197,27 +197,27 @@
   "whyChoose": {
     "sectionTitle": "Why choose ReplyIA",
     "aiAutomation": {
-      "title": "AI Automation",
+      "title": "AI automation",
       "desc": "Free up your team by automating repetitive requests with intelligent bots."
     },
     "availability": {
-      "title": "24/7 Availability",
-      "desc": "Keep customers happy with instant, around-the-clock responses—no agents needed."
+      "title": "24/7 availability",
+      "desc": "Provide instant, 24/7 customer support with AI."
     },
     "instantReplies": {
-      "title": "Instant Replies",
-      "desc": "Empower staff with canned messages to respond in seconds, not minutes."
+      "title": "Instant replies",
+      "desc": "Use message templates to reply in seconds."
     },
     "smartRouting": {
-      "title": "Smart Routing",
-      "desc": "Automatically categorize inquiries and grant role-based access for team efficiency."
+      "title": "Smart routing",
+      "desc": "Automatically categorize messages and grant role-based access for team efficiency."
     },
     "rapidScaling": {
-      "title": "Rapid Scaling",
-      "desc": "Deploy a customizable, scalable solution in weeks—pre-built for common use cases."
+      "title": "Rapid deployment",
+      "desc": "Deploy a customizable AI chatbot in weeks."
     },
     "deepInsights": {
-      "title": "Deep Insights",
+      "title": "Insights",
       "desc": "Leverage real-time analytics to track performance and optimize your workflows."
     }
   },
@@ -226,8 +226,8 @@
     "ariaLabel": "Visit the {{partner}} website"
   },
   "cta": {
-    "title": "Interested? Let's Talk!",
-    "desc": "Ready to boost your customer engagement and streamline support? Reach out today.",
+    "title": "Let's Talk!",
+    "desc": "Have questions or want a live demo? I'd be happy to show you how ReplyIA works.",
     "button": "Contact Me"
   }
 }

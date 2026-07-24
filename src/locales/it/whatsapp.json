@@ -5,7 +5,7 @@
   "hero": {
     "title-1": "Connettiti",
     "title-2": "con i clienti",
-    "subtitle": "Trasforma il modo in cui la tua azienda interagisce con i clienti grazie a ReplyIA, la soluzione con chatbot intelligenti su WhatsApp. Migliorando senza sforzo l’assistenza, aumentando il coinvolgimento e potenziando l’efficienza, tutto in un’unica soluzione semplice."
+    "subtitle": "Trasforma il modo in cui la tua azienda interagisce con i clienti. Use chatbot WhatsApp basati sull’AI che offrono assistenza immediata, automatizzano i flussi di lavoro e trasformano più conversazioni in clienti."
   },
 
   "chatSimulation": {
@@ -21,19 +21,19 @@
   "features": [
     {
       "title": "Il tuo Centro di Controllo personale",
-      "description": "Connettiti istantaneamente con i tuoi clienti tramite una dashboard intuitiva e completamente personalizzabile. Gestisci tutto senza sforzo, in un unico luogo, sempre sotto controllo."
+      "description": "Connettiti istantaneamente con i tuoi clienti tramite una dashboard completamente personalizzabile."
     },
     {
       "title": "Categorizza le richieste",
-      "description": "Ogni richiesta dei clienti viene ordinata e etichettata in modo chiaro, permettendo al tuo team di collaborare senza sforzi. Assegna, gestisci e rispondi più velocemente—insieme."
+      "description": "Ogni conversazione viene organizzata ed etichettata, così il tuo team può collaborare e rispondere più velocemente."
     },
     {
       "title": "Rimani connesso e aggiornato",
-      "description": "Il tuo team rimane allineato grazie alla visibilità in tempo reale sulle attività in corso. Con notifiche mirate, tutti sanno esattamente cosa sta succedendo—mantenendo la collaborazione fluida ed efficiente."
+      "description": "Mantieni il tuo team allineato con aggiornamenti e notifiche in tempo reale."
     },
     {
       "title": "Risparmia tempo, comunica meglio",
-      "description": "Crea modelli di messaggio personalizzati per velocizzare le conversazioni e rispondere all’istante. Accelera le interazioni, garantisci coerenza e aumenta senza sforzi la produttività del tuo team—con pochi clic."
+      "description": "Crea modelli di messaggio riutilizzabili per velocizzare le conversazioni e aumentare la produttività del team."
     }
   ],
 
@@ -206,22 +206,22 @@
     },
     "availability": {
       "title": "Disponibilità 24/7",
-      "desc": "Mantieni i clienti soddisfatti con risposte istantanee, in qualsiasi momento—senza operatori."
+      "desc": "Offri assistenza clienti immediata, 24 ore su 24, 7 giorni su 7, grazie all’AI."
     },
     "instantReplies": {
-      "title": "Risposte Istantanee",
-      "desc": "Dai al personale messaggi predefiniti per rispondere in pochi secondi, non minuti."
+      "title": "Risposte istantanee",
+      "desc": "Usa modelli di messaggio per rispondere in pochi secondi."
     },
     "smartRouting": {
-      "title": "Instradamento Intelligente",
-      "desc": "Classifica automaticamente le richieste e concedi accessi basati sui ruoli per l’efficienza del team."
+      "title": "Instradamento intelligente",
+      "desc": "Classifica automaticamente i messaggi e assegna accessi basati sui ruoli per migliorare l’efficienza del team."
     },
     "rapidScaling": {
-      "title": "Scalabilità Rapida",
-      "desc": "Implementa soluzioni personalizzabili e scalabili in poche settimane—già pronte per casi d’uso comuni."
+      "title": "Deployment rapido",
+      "desc": "Implementa un chatbot AI personalizzabile in poche settimane."
     },
     "deepInsights": {
-      "title": "Analisi Approfondite",
+      "title": "Analisi",
       "desc": "Usa analisi in tempo reale per monitorare le prestazioni e ottimizzare i flussi di lavoro."
     }
   },
@@ -231,8 +231,8 @@
     "ariaLabel": "Visita il sito di {{partner}}"
   },
   "cta": {
-    "title": "Interessato? Parliamone!",
-    "desc": "Pronto a migliorare l’interazione con i clienti e snellire il supporto? Iniziamo.",
+    "title": "Parliamone!",
+    "desc": "Hai domande o vuoi una demo dal vivo? Sarò felice di mostrarti come funziona ReplyIA.",
     "button": "Contattami"
   }
 }
