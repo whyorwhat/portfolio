@@ -27,3 +27,11 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Vercel deployment
+
+The rewrite in `vercel.json` serves `index.html` for every direct URL, allowing
+React Router to handle client-side routes such as `/replyia` instead of Vercel
+returning a `404: NOT_FOUND`.
+
+Source: [Vercel — Why is my deployed project showing a 404 error?](https://vercel.com/kb/guide/why-is-my-deployed-project-giving-404)
