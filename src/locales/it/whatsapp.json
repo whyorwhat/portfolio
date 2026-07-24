@@ -226,6 +226,10 @@
     }
   },
 
+  "partner": {
+    "label": "ReplyIA è sviluppata e utilizzata in collaborazione con",
+    "ariaLabel": "Visita il sito di {{partner}}"
+  },
   "cta": {
     "title": "Interessato? Parliamone!",
     "desc": "Pronto a migliorare l’interazione con i clienti e snellire il supporto? Iniziamo.",

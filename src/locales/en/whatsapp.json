@@ -221,6 +221,10 @@
       "desc": "Leverage real-time analytics to track performance and optimize your workflows."
     }
   },
+  "partner": {
+    "label": "ReplyIA is developed and used in collaboration with",
+    "ariaLabel": "Visit the {{partner}} website"
+  },
   "cta": {
     "title": "Interested? Let's Talk!",
     "desc": "Ready to boost your customer engagement and streamline support? Reach out today.",

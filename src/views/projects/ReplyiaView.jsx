@@ -6,6 +6,7 @@ import WhyChooseSection from "@/components/projects/replyia/WhyChooseSection.jsx
 import LanguageSwitcher from "@/global/multiLang/LanguageSwitcher.jsx";
 import ReplyiaNavbar from "@/components/projects/replyia/ReplyiaNavbar.jsx";
 import usePageMeta from "@/hooks/usePageMeta.ts";
+import PartnerSection from "@/components/projects/replyia/PartnerSection.jsx";
 
 export default function ReplyiaView() {
     usePageMeta({
@@ -27,6 +28,8 @@ export default function ReplyiaView() {
                 <FeaturesSection />
 
                 <WhyChooseSection />
+
+                <PartnerSection />
 
                 <CTA />
 
