@@ -54,8 +54,8 @@ export function ProjectsSection() {
             },
             {
                 id: 7,
-                title: 'Portfolio website',
-                description: 'See the full code of my website on GitHub.',
+                title: 'Web development #3',
+                description: 'See the full code of my portfolio on GitHub.',
                 githubLink: 'https://github.com/whyorwhat/whyorwhat.github.io',
                 technologies: ['react', 'tailwind']
             },
