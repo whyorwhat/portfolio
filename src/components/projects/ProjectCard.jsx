@@ -1,16 +1,67 @@
-import {FaGithub, FaProjectDiagram} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 import {FaArrowUpRightFromSquare} from "react-icons/fa6";
 import {TechnologiesIcons} from "@/components/projects/TechnologiesIcons.jsx";
 import WindowCard from "@/components/elements/WindowCard.jsx";
 import {useNavigate} from "react-router-dom";
+
+const previewLayouts = [
+    {left: '2%', rotation: -7, verticalOffset: 7},
+    {left: '33%', rotation: 0, verticalOffset: 0},
+    {left: '64%', rotation: 7, verticalOffset: 7},
+];
+
+function ProjectPreview({imageIds, title}) {
+    if (imageIds.length === 1) {
+        return (
+            <img
+                src={`/images/projects/${imageIds[0]}.png`}
+                alt={title}
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+            />
+        );
+    }
+
+    return (
+        <div
+            className="flex h-full min-h-[170px] w-full items-center justify-center"
+            aria-label={`${title} project previews`}
+        >
+            <div className="relative flex h-[160px] w-full max-w-[260px] items-end justify-center">
+                {imageIds.slice(0, 3).map((imageId, index) => {
+                    const layout = previewLayouts[index];
+
+                    return (
+                        <div
+                            key={imageId}
+                            className="absolute bottom-[68px] w-[34%]"
+                            style={{
+                                left: layout.left,
+                                transform: `translateY(${layout.verticalOffset}px) rotate(${layout.rotation}deg)`,
+                                zIndex: 30 + index,
+                            }}
+                        >
+                            <img
+                                src={`/images/projects/${imageId}.png`}
+                                alt={`${title} preview ${index + 1}`}
+                                className="aspect-[4/3] w-full rounded border-2 border-white bg-white object-cover shadow-md"
+                            />
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+}
 
 export function ProjectCard({
                                 id,
                                 title,
                                 description,
                                 viewLink,
-                                githubLink
-                                , technologies,
+                                githubLink,
+                                technologies,
+                                previewImageIds,
+                                onOpen,
                                 delay = 0 }) {
     const navigate = useNavigate();
     const handleView = (url) => {
@@ -20,6 +71,8 @@ export function ProjectCard({
             window.open(url, '_blank', 'noopener');
         }
     };
+
+    const imageIds = previewImageIds ?? [id];
 
     return (
         <WindowCard
@@ -51,6 +104,15 @@ export function ProjectCard({
                                 <FaArrowUpRightFromSquare className="inline-block mr-2" /> View
                             </button>
                         )}
+                        {onOpen && (
+                            <button
+                                type="button"
+                                onClick={onOpen}
+                                className="flex items-center justify-center px-4 py-2 text-xs font-semibold bg-gray-200 text-gray-800 rounded-lg shadow-sm hover:bg-gray-300 hover:shadow-md transition duration-200"
+                            >
+                                Open
+                            </button>
+                        )}
                         {githubLink && (
                             <button
                                 type="button"
@@ -63,20 +125,14 @@ export function ProjectCard({
                     </div>
                 </div>
 
-                {/* Immagine desktop, inside il flow di md:flex-row */}
-                <img
-                    src={`/images/projects/${id}.png`}
-                    alt={title}
-                    className="hidden md:block md:w-1/3 lg:w-[30%] object-cover rounded-lg shadow-lg"
-                />
+                <div className="hidden md:block md:w-1/3 lg:w-[34%] flex-shrink-0">
+                    <ProjectPreview imageIds={imageIds} title={title} />
+                </div>
             </div>
 
-            {/* Immagine mobile, fuori dal wrapper flex */}
-            <img
-                src={`/images/projects/${id}.png`}
-                alt={title}
-                className="block md:hidden w-full mt-4 rounded-lg shadow-md"
-            />
+            <div className="block md:hidden w-full mt-4 min-h-[220px]">
+                <ProjectPreview imageIds={imageIds} title={title} />
+            </div>
         </WindowCard>
     );
 }
