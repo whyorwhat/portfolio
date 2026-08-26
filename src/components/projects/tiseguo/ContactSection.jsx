@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import { CONTACT_HREF } from "./content";
 import { useTranslation } from "react-i18next";
 
 export function ContactSection() {

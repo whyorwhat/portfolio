@@ -1,5 +1,4 @@
 import { Brand } from "./Brand";
-import { CONTACT_HREF } from "./content";
 import { useTranslation } from "react-i18next";
 
 export function Header() {
@@ -10,7 +9,7 @@ export function Header() {
       <div className="mx-auto flex h-[4.5rem] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Brand />
         <a
-          href={CONTACT_HREF}
+          href={"/contacs"}
           className="inline-flex h-10 items-center justify-center rounded-full bg-[#171918] px-4 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#343735] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#171918] motion-reduce:transition-none sm:px-5"
         >
           {t("header.contact")}

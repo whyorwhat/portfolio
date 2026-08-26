@@ -28,7 +28,7 @@ export function FeatureSection({
       className={`scroll-mt-[4.5rem] ${muted ? "bg-[#FAFAFA]" : "bg-[#F5F5F5]"}`}
     >
       <div className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-[5.5rem]">
-        <div className="grid gap-5 lg:grid-cols-[190px_1fr] lg:gap-8">
+        <div className="grid gap-5 min-[1321px]:grid-cols-[190px_1fr] min-[1321px]:gap-8">
           <p
             className={`text-sm font-semibold tracking-[0.12em] uppercase ${LABEL_TONES[tone]}`}
           >
@@ -44,15 +44,15 @@ export function FeatureSection({
           </div>
         </div>
 
-        <div className="mt-11 grid gap-x-8 gap-y-10 md:grid-cols-3 lg:ml-[222px] lg:mt-14 lg:gap-x-12">
+        <div className="mt-11 grid gap-x-8 gap-y-10 min-[916px]:grid-cols-3 min-[1321px]:ml-[222px] min-[1321px]:mt-14 min-[1321px]:gap-x-12">
           {items.map((item) => (
             <article key={item.icon} className="flex items-start gap-4">
               <ConceptIcon name={item.icon} tone={tone} />
               <div className="min-w-0">
-                <h3 className="text-[1.1rem] leading-[1.4] font-semibold tracking-[-0.025em] sm:text-[1.2rem]">
+                <h3 className="text-[1.1rem] leading-[1.4] font-semibold tracking-[-0.025em] text-[rgb(0,0,0)] sm:text-[1.2rem]">
                   <ItemTitle item={item} />
                 </h3>
-                <p className="mt-1.5 text-[1.05rem] leading-[1.45] font-normal tracking-[-0.018em] text-[rgba(23,25,24,0.55)] sm:text-[1.15rem]">
+                <p className="mt-1.5 text-[1.05rem] leading-[1.45] font-normal tracking-[-0.018em] text-[rgb(102,102,102)] sm:text-[1.15rem]">
                   {item.description}
                 </p>
               </div>

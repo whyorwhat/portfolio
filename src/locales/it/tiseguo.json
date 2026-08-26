@@ -15,7 +15,7 @@
   "scenario": {
     "label": "Contesto attuale",
     "title": "Il processo si frammenta nei passaggi tra un attore e l’altro.",
-    "description": "Il problema non è il lavoro delle singole parti. È ciò che si perde tra una decisione, un aggiornamento e il passaggio successivo.",
+    "description": "Il problema è ciò che si perde tra una decisione, un aggiornamento e il passaggio successivo.",
     "items": [
       {
         "icon": "channels",
@@ -47,7 +47,7 @@
     ]
   },
   "approach": {
-    "label": "La soluzione",
+    "label": "Soluzione",
     "title": "Un unico contesto, dall’apertura alla chiusura.",
     "description": "Ti Seguo ricompone il percorso senza cambiare i ruoli: ogni attore vede ciò che gli serve e sa qual è il prossimo passo.",
     "items": [
@@ -55,7 +55,7 @@
         "icon": "path",
         "titleParts": [{ "text": "Un percorso condiviso, in diretta" }],
         "tone": "green",
-        "description": "Notifiche, calendari condivisi, chat integrate e cloud, per aggiornamenti in tempo reale su ogni dispositivo."
+        "description": "Notifiche, calendari condivisi, chat integrate e cloud mantengono ogni dispositivo aggiornato in tempo reale."
       },
       {
         "icon": "roles",
@@ -99,9 +99,10 @@
   "difference": {
     "title": "Cosa ha di diverso da ogni altro gestionale di sinistri?",
     "paragraph1": "Ho sviluppato Ti Seguo partendo dal punto di vista dell’agenzia assicurativa e dai problemi della gestione operativa quotidiana. Da lì ho analizzato ciò che mancava al cliente per sentirsi davvero parte del percorso.",
-    "paragraph2": "Le carrozzerie e la loro gestione sono diventate una parte centrale dell’analisi, perché rappresentano il cuore operativo nella risoluzione di un sinistro.",
-    "paragraph3": "Ho poi esteso il lavoro alla Compagnia assicurativa e ai suoi processi interni, osservandoli e valutandoli direttamente dall’interno.",
-    "paragraph4Before": "Infine, ho progettato un ruolo specifico per i partner commerciali fornitori di ricambi. Tutto si integra perfettamente in una piattaforma",
+    "paragraph2": "Inoltre, le carrozzerie e la loro gestione sono diventate una parte centrale dell’analisi, perché rappresentano il cuore operativo nella risoluzione di un sinistro.",
+    "paragraph3": "Ho poi esteso il lavoro alla compagnia assicurativa e ai suoi processi interni, osservandoli e valutandoli direttamente dall’interno.",
+    "partnerParagraph": "Infine, ho progettato un ruolo specifico per i partner commerciali fornitori di ricambi, lavorando direttamente con loro per rendere la collaborazione con Ti Seguo il più fluida possibile.",
+    "integrationBefore": "Tutto si integra perfettamente in una piattaforma",
     "highlight": "unica nel suo genere",
     "paragraph4After": "."
   },

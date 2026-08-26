@@ -15,7 +15,7 @@
   "scenario": {
     "label": "Current context",
     "title": "The process fragments as work passes from one stakeholder to the next.",
-    "description": "The problem is not the work of each individual party. It is what gets lost between a decision, an update, and the next handoff.",
+    "description": "The problem is what gets lost between a decision, an update, and the next handoff.",
     "items": [
       {
         "icon": "channels",
@@ -79,7 +79,7 @@
         "icon": "garage",
         "titleParts": [{ "text": "Repair shop network" }],
         "tone": "green",
-        "description": "A network of repair shops communicates with every other stakeholder in real time. Reviews also help customers feel more confident in their choice."
+        "description": "A network of repair shops communicates with every other stakeholder in real time. And reviews help customers feel more confident in their choice."
       },
       {
         "icon": "inspection",
@@ -98,9 +98,10 @@
   "difference": {
     "title": "What makes it different from every other claims management system?",
     "paragraph1": "I developed Ti Seguo from the perspective of an insurance agency and the challenges of day-to-day operations. From there, I analyzed what customers were missing to feel truly involved in the journey.",
-    "paragraph2": "Repair shops and their management became a central part of the analysis because they are the operational heart of resolving a claim.",
+    "paragraph2": "Moreover, repair shops and their management became a central part of the analysis because they are the operational heart of resolving a claim.",
     "paragraph3": "I then extended the work to the insurance company and its internal processes, observing and evaluating them directly from within.",
-    "paragraph4Before": "Finally, I designed a dedicated role for commercial partners that supply spare parts. Everything comes together seamlessly in a platform that is",
+    "partnerParagraph": "Finally, I designed a dedicated role for commercial partners that supply spare parts, working directly with them to make their collaboration with Ti Seguo as smooth and effective as possible.",
+    "integrationBefore": "Everything perfectly comes together in a platform that is",
     "highlight": "truly one of a kind",
     "paragraph4After": "."
   },

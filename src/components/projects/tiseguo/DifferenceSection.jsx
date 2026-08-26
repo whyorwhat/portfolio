@@ -14,8 +14,9 @@ export function DifferenceSection() {
           <p>{t("difference.paragraph1")}</p>
           <p>{t("difference.paragraph2")}</p>
           <p>{t("difference.paragraph3")}</p>
+          <p>{t("difference.partnerParagraph")}</p>
           <p>
-            {t("difference.paragraph4Before")}{" "}
+            {t("difference.integrationBefore")}{" "}
             <span className="inline rounded-[0.3em] bg-[#b9d9c0] px-[0.24em] py-[0.04em] font-semibold text-[#17392b] box-decoration-clone">
               {t("difference.highlight")}
             </span>
