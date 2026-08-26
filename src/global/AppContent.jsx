@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import HomeView from "@/views/HomeView.jsx";
 import Footer from "@/global/Footer.jsx";
 import Navbar from "@/global/Navbar.jsx";
@@ -11,6 +11,9 @@ import ReplyiaView from "@/views/projects/ReplyiaView.jsx";
 import AnimateOnLang from "@/global/multiLang/AnimateOnLang.jsx";
 
 export default function AppContent() {
+    const location = useLocation();
+    const hasProjectFooter = location.pathname === "/ti-seguo";
+
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             <Navbar />
@@ -21,7 +24,14 @@ export default function AppContent() {
                     <Route path="/me" element={<AboutMeView />} />
                     <Route path="/projects" element={<ProjectsView />} />
                     <Route path="/contacts" element={<ContactsView />} />
-                    <Route path="/ti-seguo" element={<TiSeguoView />} />
+                    <Route
+                        path="/ti-seguo"
+                        element={
+                            <AnimateOnLang id="tiseguo">
+                                <TiSeguoView />
+                            </AnimateOnLang>
+                        }
+                    />
                     <Route path="/customer-radar" element={<CustomerRadarView />} />
                     <Route
                         path="/replyia"
@@ -34,7 +44,7 @@ export default function AppContent() {
                 </Routes>
             </main>
 
-            <Footer />
+            {!hasProjectFooter && <Footer />}
         </div>
     );
 }

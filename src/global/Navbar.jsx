@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const location = useLocation();
-    const shouldShow = location.pathname === "/" || location.pathname === "/replyia";
+    const shouldShow = ["/", "/replyia", "/ti-seguo"].includes(location.pathname);
 
     if (shouldShow) return null;
 

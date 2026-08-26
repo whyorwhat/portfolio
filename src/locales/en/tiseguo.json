@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Ti Seguo | One claim. One continuous thread."
+  },
+  "brand": {
+    "ariaLabel": "Ti Seguo, back to the top",
+    "logoAlt": "Ti Seguo logo"
+  },
+  "header": {
+    "contact": "Let's talk"
+  },
+  "hero": {
+    "description": "Ti Seguo is an insurance claims management platform that brings insurance companies, agencies, adjusters, repair shops, and customers together in the same operational context. From opening to closure."
+  },
+  "scenario": {
+    "label": "Current context",
+    "title": "The process fragments as work passes from one stakeholder to the next.",
+    "description": "The problem is not the work of each individual party. It is what gets lost between a decision, an update, and the next handoff.",
+    "items": [
+      {
+        "icon": "channels",
+        "titleParts": [
+          { "text": "Misaligned " },
+          { "text": "channels", "highlight": true }
+        ],
+        "tone": "red",
+        "description": "Updates, documents, and decisions move between different tools and people."
+      },
+      {
+        "icon": "context",
+        "titleParts": [
+          { "text": "Incomplete " },
+          { "text": "context", "highlight": true }
+        ],
+        "tone": "red",
+        "description": "Each stakeholder sees only part of the picture and has to reconstruct what happened."
+      },
+      {
+        "icon": "time",
+        "titleParts": [
+          { "text": "Longer " },
+          { "text": "timelines", "highlight": true }
+        ],
+        "tone": "red",
+        "description": "Limited data transparency during handoffs extends resolution times."
+      }
+    ]
+  },
+  "approach": {
+    "label": "Solution",
+    "title": "One shared context, from opening to closure.",
+    "description": "Ti Seguo reconnects the journey without changing roles: each stakeholder sees what they need and always knows the next step.",
+    "items": [
+      {
+        "icon": "path",
+        "titleParts": [{ "text": "A shared journey, in real time" }],
+        "tone": "green",
+        "description": "Notifications, shared calendars, integrated chat, and cloud services keep every device updated in real time."
+      },
+      {
+        "icon": "roles",
+        "titleParts": [
+          { "text": "Roles and " },
+          { "text": "hierarchies" }
+        ],
+        "tone": "green",
+        "description": "Access to information can be changed dynamically, so each person only sees the information relevant to their responsibilities."
+      },
+      {
+        "icon": "step",
+        "titleParts": [
+          { "text": "A clear " },
+          { "text": "next step", "highlight": true }
+        ],
+        "tone": "green",
+        "description": "Every stage of a claim has been mapped, making each action predictable."
+      },
+      {
+        "icon": "garage",
+        "titleParts": [{ "text": "Repair shop network" }],
+        "tone": "green",
+        "description": "A network of repair shops communicates with every other stakeholder in real time. Reviews also help customers feel more confident in their choice."
+      },
+      {
+        "icon": "inspection",
+        "titleParts": [{ "text": "Integrated inspections" }],
+        "tone": "green",
+        "description": "Inspection data is integrated with estimating systems and displayed only to authorized users."
+      },
+      {
+        "icon": "parts",
+        "titleParts": [{ "text": "Spare parts, right away" }],
+        "tone": "green",
+        "description": "Through a spare-parts supplier, parts can be ordered directly from the inspection report, with tracking and lower operating costs."
+      }
+    ]
+  },
+  "difference": {
+    "title": "What makes it different from every other claims management system?",
+    "paragraph1": "I developed Ti Seguo from the perspective of an insurance agency and the challenges of day-to-day operations. From there, I analyzed what customers were missing to feel truly involved in the journey.",
+    "paragraph2": "Repair shops and their management became a central part of the analysis because they are the operational heart of resolving a claim.",
+    "paragraph3": "I then extended the work to the insurance company and its internal processes, observing and evaluating them directly from within.",
+    "paragraph4Before": "Finally, I designed a dedicated role for commercial partners that supply spare parts. Everything comes together seamlessly in a platform that is",
+    "highlight": "truly one of a kind",
+    "paragraph4After": "."
+  },
+  "contact": {
+    "title": "Would you like a demo or to learn more?",
+    "button": "Let's talk"
+  },
+  "footer": {
+    "text": "Ti Seguo is a project by Simone Cotardo."
+  }
+}
