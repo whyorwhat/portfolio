@@ -13,12 +13,13 @@ import AnimateOnLang from "@/global/multiLang/AnimateOnLang.jsx";
 export default function AppContent() {
     const location = useLocation();
     const hasProjectFooter = location.pathname === "/ti-seguo";
+    const isHomePage = location.pathname === "/";
 
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
             <Navbar />
 
-            <main className="flex-grow">
+            <main className={isHomePage ? "flex flex-grow" : "flex-grow"}>
                 <Routes>
                     <Route path="/" element={<HomeView />} />
                     <Route path="/me" element={<AboutMeView />} />
