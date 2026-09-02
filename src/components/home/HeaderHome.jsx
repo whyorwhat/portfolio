@@ -10,7 +10,6 @@ export default function HeaderHome() {
                 <div className="row-start-1 lg:col-start-2 lg:row-start-1">
                     <GradientText
                         colors={["#ADD8E6", "#87CEEB", "#6495ED", "#4169E1", "#1E90FF"]}
-                        animationSpeed={8}
                         showBorder={false}
                         className="text-7xl font-semibold sm:text-8xl"
                     >
@@ -19,7 +18,6 @@ export default function HeaderHome() {
 
                     <GradientText
                         colors={["#00BFFF", "#1E90FF", "#4169E1", "#0000FF"]}
-                        animationSpeed={8}
                         showBorder={false}
                         className="mt-4 text-2xl font-light tracking-wide opacity-90 sm:text-3xl"
                     >

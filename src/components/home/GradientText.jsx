@@ -2,12 +2,10 @@ export default function GradientText({
                                          children,
                                          className = "",
                                          colors = ["#ffaa40", "#9c40ff", "#ffaa40"],
-                                         animationSpeed = 8,
                                          showBorder = false,
                                      }) {
     const gradientStyle = {
         backgroundImage: `linear-gradient(to right, ${colors.join(", ")})`,
-        animationDuration: `${animationSpeed}s`,
     };
 
     return (
@@ -16,10 +14,9 @@ export default function GradientText({
         >
             {showBorder && (
                 <div
-                    className="absolute inset-0 bg-cover z-0 pointer-events-none animate-gradient"
+                    className="pointer-events-none absolute inset-0 z-0 bg-cover"
                     style={{
                         ...gradientStyle,
-                        backgroundSize: "300% 100%",
                     }}
                 >
                     <div
@@ -35,12 +32,11 @@ export default function GradientText({
                 </div>
             )}
             <div
-                className="inline-block relative z-2 text-transparent bg-cover animate-gradient"
+                className="relative z-2 inline-block bg-cover text-transparent"
                 style={{
                     ...gradientStyle,
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
-                    backgroundSize: "300% 100%",
                 }}
             >
                 {children}
