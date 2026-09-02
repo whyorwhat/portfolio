@@ -5,8 +5,8 @@ import FancyButton from "@/components/elements/FancyButton.jsx";
 
 export default function HeaderHome() {
     return (
-        <header className="w-full px-4 py-12 text-center lg:py-20">
-            <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center justify-items-center gap-y-10 lg:grid-cols-[minmax(0,22rem)_minmax(32rem,1fr)] lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-8">
+        <header className="w-full px-4 py-6 text-center sm:py-10 lg:py-20">
+            <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center justify-items-center gap-y-6 sm:gap-y-10 lg:grid-cols-[minmax(0,22rem)_minmax(32rem,1fr)] lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-8">
                 <div className="row-start-1 lg:col-start-2 lg:row-start-1">
                     <GradientText
                         colors={["#ADD8E6", "#87CEEB", "#6495ED", "#4169E1", "#1E90FF"]}
@@ -25,7 +25,7 @@ export default function HeaderHome() {
                     </GradientText>
                 </div>
 
-                <AsciiWelcome className="row-start-2 max-w-[22rem] lg:col-start-1 lg:row-span-2 lg:row-start-1" />
+                <AsciiWelcome className="row-start-2 max-h-[32svh] max-w-[22rem] sm:max-h-[36svh] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:max-h-none" />
 
                 <div className="row-start-3 flex flex-wrap justify-center gap-6 lg:col-start-2 lg:row-start-2 lg:flex-nowrap lg:gap-4">
                     <FancyButton

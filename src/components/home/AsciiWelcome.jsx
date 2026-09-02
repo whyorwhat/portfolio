@@ -19,10 +19,24 @@ export default function AsciiWelcome({ className = "" }) {
 
             if (!naturalWidth || !naturalHeight) return;
 
-            const scale = Math.min(1, container.clientWidth / naturalWidth);
+            const computedMaxHeight = Number.parseFloat(
+                window.getComputedStyle(container).maxHeight,
+            );
+            const heightScale = Number.isFinite(computedMaxHeight)
+                ? computedMaxHeight / naturalHeight
+                : 1;
+            const scale = Math.min(
+                1,
+                container.clientWidth / naturalWidth,
+                heightScale,
+            );
 
             art.style.transform = `translateX(-50%) scale(${scale})`;
-            container.style.height = `${naturalHeight * scale}px`;
+            const scaledHeight = `${naturalHeight * scale}px`;
+
+            if (container.style.height !== scaledHeight) {
+                container.style.height = scaledHeight;
+            }
         };
 
         resizeArt();

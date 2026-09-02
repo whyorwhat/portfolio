@@ -16,7 +16,7 @@ export default function AppContent() {
     const isHomePage = location.pathname === "/";
 
     return (
-        <div className="flex min-h-screen flex-col bg-[var(--color-background)] font-sans text-slate-100">
+        <div className="flex min-h-[100svh] flex-col bg-[var(--color-background)] font-sans text-slate-100">
             <Navbar />
 
             <main className={isHomePage ? "flex flex-grow" : "flex-grow"}>
