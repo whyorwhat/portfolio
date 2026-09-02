@@ -4,9 +4,9 @@ import FancyButton from '@/components/elements/FancyButton.jsx';
 export default function CustomerRadarView() {
   return (
       <main className="flex-grow flex items-center justify-center px-4 py-12">
-        <div className="bg-white border border-gray-300 shadow-lg p-6 rounded-lg max-w-lg w-full text-center">
+        <div className="w-full max-w-lg rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-6 text-center shadow-lg">
             <h1 className="text-3xl font-bold mb-3">Customer Radar</h1>
-            <p className="text-gray-500 mb-6">
+            <p className="mb-6 text-slate-400">
               The presentation page of the project is currently under development. Check back soon!
             </p>
             <FancyButton

@@ -4,11 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    color-scheme: dark;
+    --color-background: #1b1d21;
+    --color-surface: #24272d;
+    --color-surface-raised: #2d3138;
+    --color-border: #41464f;
+    --color-text: #f1f5f9;
+    --color-text-muted: #a8b3c5;
+}
 
 body {
     @apply font-sans;
+    min-width: 320px;
+    background: var(--color-background);
+    color: var(--color-text);
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
+    background: var(--color-background);
+}
+
+::selection {
+    background: rgb(59 130 246 / 0.35);
+    color: #fff;
 }

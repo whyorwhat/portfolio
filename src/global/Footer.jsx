@@ -1,9 +1,9 @@
-export default function Footer() {
+export default function Footer({ light = false }) {
 const currentYear = new Date().getFullYear();
 
 return (
-<footer className="text-center py-2 bg-gray-50">
-<p className="text-gray-500 text-[10px] font-mono">
+<footer className={`border-t py-2 text-center ${light ? "border-gray-100 bg-gray-50" : "border-[var(--color-border)] bg-[var(--color-background)]"}`}>
+<p className={`font-mono text-[10px] ${light ? "text-gray-500" : "text-slate-500"}`}>
   &copy; {currentYear} Simone Cotardo All Rights Reserved.
 </p>
 </footer>

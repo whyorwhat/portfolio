@@ -93,7 +93,7 @@ export default function AboutMeView() {
   );
 
   return (
-      <div className="container mx-auto max-w-4xl px-4 py-12 text-gray-800">
+      <div className="container mx-auto max-w-4xl px-4 py-12 text-slate-100">
         {/* Description */}
         <section className="mb-20">
             <div className="text-center">
@@ -147,7 +147,7 @@ export default function AboutMeView() {
                     <h3 className="text-lg font-semibold text-center mb-1">
                       {skill.title}
                     </h3>
-                    <p className="text-gray-700 text-sm leading-relaxed text-center">
+                    <p className="text-center text-sm leading-relaxed text-slate-300">
                       {skill.content}
                     </p>
                   </WindowCard>

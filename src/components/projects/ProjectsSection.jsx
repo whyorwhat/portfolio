@@ -120,21 +120,21 @@ export function ProjectsSection() {
                     <div className="flex min-h-full items-center justify-center">
                         <DialogPanel
                             transition
-                            className="relative w-full max-w-4xl max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto rounded-2xl bg-white p-4 sm:p-8 shadow-2xl transition duration-200 data-[closed]:translate-y-4 data-[closed]:opacity-0"
+                            className="relative max-h-[calc(100vh-2rem)] w-full max-w-4xl overflow-y-auto rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-slate-100 shadow-2xl transition duration-200 data-[closed]:translate-y-4 data-[closed]:opacity-0 sm:max-h-[calc(100vh-4rem)] sm:p-8"
                         >
-                            <div className="sticky top-0 z-40 flex items-start justify-between gap-4 border-b border-gray-200 bg-white/95 pb-4 backdrop-blur">
+                            <div className="sticky top-0 z-40 flex items-start justify-between gap-4 border-b border-[var(--color-border)] bg-[rgba(36,39,45,0.95)] pb-4 backdrop-blur">
                                 <div>
-                                    <DialogTitle className="text-2xl font-extrabold text-gray-900">
+                                    <DialogTitle className="text-2xl font-extrabold text-slate-100">
                                         Web development
                                     </DialogTitle>
-                                    <p className="mt-1 text-sm text-gray-600">
+                                    <p className="mt-1 text-sm text-slate-400">
                                         Websites and web experiences I designed and developed.
                                     </p>
                                 </div>
                                 <button
                                     type="button"
                                     onClick={() => setIsWebDevelopmentOpen(false)}
-                                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-700 transition hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+                                    className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-raised)] text-slate-200 transition hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[var(--color-surface)]"
                                     aria-label="Close web development projects"
                                 >
                                     <FaXmark aria-hidden="true" />

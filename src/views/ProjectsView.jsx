@@ -4,7 +4,7 @@ import AnimatedText from "@/components/elements/AnimatedText.jsx";
 
 export default function ProjectsView() {
   return (
-      <div className="flex flex-col min-h-screen font-sans bg-white">
+      <div className="flex min-h-screen flex-col bg-[var(--color-background)] font-sans text-slate-100">
         <main className="flex-grow container mx-auto px-4 py-12">
             <div className="text-center">
                 <AnimatedText

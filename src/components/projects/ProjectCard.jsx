@@ -43,7 +43,7 @@ function ProjectPreview({imageIds, title}) {
                             <img
                                 src={`/images/projects/${imageId}.png`}
                                 alt={`${title} preview ${index + 1}`}
-                                className="aspect-[4/3] w-full rounded border-2 border-white bg-white object-cover shadow-md"
+                                className="aspect-[4/3] w-full rounded border-2 border-slate-600 bg-slate-800 object-cover shadow-md"
                             />
                         </div>
                     );
@@ -83,11 +83,11 @@ export function ProjectCard({
             <div className="flex flex-col md:flex-row flex-grow">
                 {/* Contenuto principale */}
                 <div className="flex-grow md:pr-6">
-                    <h3 className="text-xl font-extrabold text-gray-800 mb-4">{title}</h3>
-                    <p className="text-sm text-gray-600 mb-4">{description}</p>
+                    <h3 className="mb-4 text-xl font-extrabold text-slate-100">{title}</h3>
+                    <p className="mb-4 text-sm text-slate-300">{description}</p>
 
                     <div
-                        className="flex flex-col md:flex-row text-xs text-gray-500 mb-4
+                        className="mb-4 flex flex-col text-xs text-slate-400 md:flex-row
                             items-start md:items-center"
                     >
                         <span className="mb-1 md:mb-0 md:mr-2">Made&nbsp;with:</span>
@@ -108,7 +108,7 @@ export function ProjectCard({
                             <button
                                 type="button"
                                 onClick={onOpen}
-                                className="flex items-center justify-center px-4 py-2 text-xs font-semibold bg-gray-200 text-gray-800 rounded-lg shadow-sm hover:bg-gray-300 hover:shadow-md transition duration-200"
+                                className="flex items-center justify-center rounded-lg bg-slate-700 px-4 py-2 text-xs font-semibold text-slate-100 shadow-sm transition duration-200 hover:bg-slate-600 hover:shadow-md"
                             >
                                 Open
                             </button>
@@ -117,7 +117,7 @@ export function ProjectCard({
                             <button
                                 type="button"
                                 onClick={() => window.open(githubLink, '_blank', 'noopener')}
-                                className="flex items-center justify-center px-4 py-2 text-xs font-semibold bg-gray-200 text-gray-800 rounded-lg shadow-sm hover:bg-gray-300 hover:shadow-md transition duration-200"
+                                className="flex items-center justify-center rounded-lg bg-slate-700 px-4 py-2 text-xs font-semibold text-slate-100 shadow-sm transition duration-200 hover:bg-slate-600 hover:shadow-md"
                             >
                                 <FaGithub className="inline-block mr-2" /> GitHub
                             </button>

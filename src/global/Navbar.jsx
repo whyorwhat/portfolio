@@ -23,7 +23,7 @@ export default function Navbar() {
     return (
         <Disclosure
             as="nav"
-            className="sticky top-0 z-40 bg-white/80 backdrop-blur-md shadow-sm"
+            className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[rgba(27,29,33,0.9)] shadow-sm backdrop-blur-md"
         >
             {({ open }) => (
                 <>
@@ -43,7 +43,7 @@ export default function Navbar() {
                                         className={classNames(
                                             location.pathname === item.href
                                                 ? "text-blue-600 font-semibold"
-                                                : "text-gray-600 hover:text-blue-500",
+                                                : "text-slate-300 hover:text-blue-400",
                                             "px-3 py-2 rounded-md text-sm transition"
                                         )}
                                     >
@@ -53,7 +53,7 @@ export default function Navbar() {
                             </div>
 
                             <div className="flex items-center md:hidden">
-                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-blue-500 focus:outline-none">
+                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-300 hover:text-blue-400 focus:outline-none">
                                     <span className="sr-only">Open menu</span>
                                     {open ? (
                                         <XMarkIcon className="block h-6 w-6" />
@@ -75,7 +75,7 @@ export default function Navbar() {
                                     className={classNames(
                                         location.pathname === item.href
                                             ? "text-blue-600 font-semibold"
-                                            : "text-gray-600 hover:text-blue-500",
+                                                : "text-slate-300 hover:text-blue-400",
                                         "block px-3 py-2 rounded-md text-base transition"
                                     )}
                                 >

@@ -15,7 +15,7 @@ export default function ReplyiaView() {
     });
 
     return (
-        <div className="font-inter bg-white">
+        <div className="bg-white font-inter text-slate-950 [color-scheme:light]">
             <ReplyiaNavbar />
 
             <div className="px-4 sm:px-6 lg:px-20">

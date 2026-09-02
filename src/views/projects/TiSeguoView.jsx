@@ -12,7 +12,7 @@ export default function TiSeguoView() {
   });
 
   return (
-    <div className="bg-[#fafaf7] text-[#171918] antialiased [font-family:Arial,Helvetica,sans-serif] selection:bg-[rgba(23,25,24,0.12)] selection:text-[#171918]">
+    <div className="bg-[#fafaf7] text-[#171918] antialiased [color-scheme:light] [font-family:Arial,Helvetica,sans-serif] selection:bg-[rgba(23,25,24,0.12)] selection:text-[#171918]">
       <TiSeguoPage />
       <LanguageSwitcher />
     </div>

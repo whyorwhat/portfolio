@@ -74,7 +74,7 @@ export function TechnologiesIcons({ technologies }) {
                         className="relative group inline-flex"
                         aria-label={label}
                     >
-                        <Icon className="w-6 h-6 text-gray-600" />
+                        <Icon className="h-6 w-6 text-slate-300" />
 
                         {/* tooltip */}
                         <span
@@ -88,7 +88,7 @@ export function TechnologiesIcons({ technologies }) {
                         </span>
                     </span>
                 ) : (
-                    <span key={tech} className="text-xs text-gray-500">{tech}</span>
+                    <span key={tech} className="text-xs text-slate-400">{tech}</span>
                 );
             })}
         </div>
