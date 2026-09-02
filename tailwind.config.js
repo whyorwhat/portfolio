@@ -9,7 +9,8 @@ export default {
             zIndex: { 60: '60', 70: '70', 80: '80', 90: '90', 100: '100' },
             fontFamily: {
                 sans: ['Ubuntu', 'sans-serif'],
-                inter: ['Inter', 'sans-serif'],
+                replyia: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+                'replyia-ui': ['Manrope', 'sans-serif'],
             },
         },
     },

@@ -71,8 +71,7 @@ const FeaturesSection = () => {
                             </p>
                         </div>
 
-                        {/* Ecco la riga modificata */}
-                        <div className="flex-1 w-full">
+                        <div className="w-full flex-1 font-replyia-ui">
                             <feat.Animation/>
                         </div>
                     </motion.div>

@@ -99,7 +99,7 @@ const ChatSimulation = () => {
     return (
         <div
             ref={containerRef}
-            className="relative bg-[url('/projects/replyia/wa_default_bg.jpg')] bg-contain rounded-xl shadow-xl w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto select-none">
+            className="relative mx-auto w-full max-w-2xl select-none rounded-xl bg-[url('/projects/replyia/wa_default_bg.jpg')] bg-contain font-replyia-ui shadow-xl md:max-w-3xl lg:max-w-4xl">
 
             <div className="relative">
                 <ChatHeader />
