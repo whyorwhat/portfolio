@@ -42,11 +42,10 @@ export default function AsciiWelcome({ className = "" }) {
             ref={containerRef}
             className={`relative w-full overflow-hidden ${className}`}
             role="img"
-            aria-label="Ritratto stilizzato di Simone Cotardo"
         >
             <pre
                 ref={artRef}
-                className="absolute left-1/2 top-0 m-0 w-max origin-top whitespace-pre text-left font-mono font-normal leading-[0.82] text-blue-200"
+                className="absolute left-1/2 top-0 m-0 w-max origin-top whitespace-pre text-left font-mono font-normal leading-none text-blue-200"
                 style={{ fontSize: `${NATURAL_FONT_SIZE}px` }}
                 aria-hidden="true"
             >
