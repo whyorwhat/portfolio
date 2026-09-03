@@ -16,13 +16,18 @@ const variants = {
     }),
 };
 
-export default function WindowCard({ children, delay = 0, className = '' }) {
+export default function WindowCard({
+    children,
+    delay = 0,
+    className = '',
+    viewport = { once: true, amount: 0.15, margin: '0px 0px 12% 0px' },
+}) {
     return (
         <motion.div
             className={`h-full ${className}`}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.15, margin: '0px 0px 12% 0px' }}
+            viewport={viewport}
             variants={variants}
             custom={delay}
         >

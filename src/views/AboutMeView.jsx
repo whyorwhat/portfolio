@@ -14,6 +14,8 @@ import {
 import { PiGraph } from "react-icons/pi";
 
 import AnimatedText from "@/components/elements/AnimatedText.jsx";
+import ieltsLogo from "@/assets/certifications/ielts-logo.png";
+import awsCloudPractitionerLogo from "@/assets/certifications/aws-cloud-practitioner.webp";
 
 export default function AboutMeView() {
   const skills = useMemo(
@@ -92,6 +94,22 @@ export default function AboutMeView() {
       []
   );
 
+  const certifications = useMemo(
+      () => [
+          {
+                name: "IELTS",
+                logo: ieltsLogo,
+                description: "English proficiency – C1",
+          },
+          {
+                name: "AWS",
+                logo: awsCloudPractitionerLogo,
+                description: "AWS Cloud Practitioner",
+          },
+      ],
+      []
+  );
+
   return (
       <div className="container mx-auto max-w-4xl px-4 py-12 text-slate-100">
         {/* Description */}
@@ -153,6 +171,47 @@ export default function AboutMeView() {
                   </WindowCard>
               );
             })}
+          </div>
+        </section>
+
+        {/* Certifications */}
+        <section className="mb-16" aria-labelledby="certifications-heading">
+          <div className="text-center">
+            <AnimatedText
+                text="Certifications"
+                className="text-4xl mb-8 font-bold"
+                delay={60}
+                duration={0.4}
+                splitType="chars"
+            />
+          </div>
+
+          <h2 id="certifications-heading" className="sr-only">
+            Certifications
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+            {certifications.map((certification, index) => (
+                <WindowCard
+                    key={index}
+                    delay={index}
+                    className="h-full"
+                    viewport={{ once: true, amount: 0.6, margin: "0px 0px -10% 0px" }}
+                >
+                  <div
+                      className="mb-4 flex h-24 w-full items-center justify-center rounded-md bg-white p-2"
+                  >
+                    <img
+                        src={certification.logo}
+                        alt={`${certification.name} certification logo`}
+                        className="h-full w-full object-contain"
+                    />
+                  </div>
+                  <p className="text-center text-sm leading-relaxed text-slate-300">
+                    {certification.description}
+                  </p>
+                </WindowCard>
+            ))}
           </div>
         </section>
 
