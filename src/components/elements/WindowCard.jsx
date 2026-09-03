@@ -22,7 +22,7 @@ export default function WindowCard({ children, delay = 0, className = '' }) {
             className={`h-full ${className}`}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.75 }}
+            viewport={{ once: true, amount: 0.15, margin: '0px 0px 12% 0px' }}
             variants={variants}
             custom={delay}
         >

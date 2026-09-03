@@ -15,7 +15,7 @@ export default function AnimatedText({
                                       from = { opacity: 0, y: 40 },
                                       to = { opacity: 1, y: 0 },
                                       threshold = 0.1,
-                                      rootMargin = "-100px",
+                                      rootMargin = "80px",
                                       textAlign = "center",
                                       onLetterAnimationComplete,
                                   }) {
@@ -53,8 +53,8 @@ export default function AnimatedText({
         const startPct = (1 - threshold) * 100;
         const m = /^(-?\d+)px$/.exec(rootMargin);
         const raw = m ? parseInt(m[1], 10) : 0;
-        const sign = raw < 0 ? `-=${Math.abs(raw)}px` : `+=${raw}px`;
-        const start = `top ${startPct}%${sign}`;
+        const offset = raw < 0 ? `-=${Math.abs(raw)}px` : `+=${raw}px`;
+        const start = `top ${startPct}%${offset}`;
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -86,7 +86,7 @@ export default function AnimatedText({
 
         return () => {
             tl.kill();
-            ScrollTrigger.getAll().forEach((t) => t.kill());
+            tl.scrollTrigger?.kill();
             gsap.killTweensOf(targets);
             splitter.revert();
         };

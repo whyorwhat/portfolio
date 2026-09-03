@@ -19,17 +19,7 @@ export default function AsciiWelcome({ className = "" }) {
 
             if (!naturalWidth || !naturalHeight) return;
 
-            const computedMaxHeight = Number.parseFloat(
-                window.getComputedStyle(container).maxHeight,
-            );
-            const heightScale = Number.isFinite(computedMaxHeight)
-                ? computedMaxHeight / naturalHeight
-                : 1;
-            const scale = Math.min(
-                1,
-                container.clientWidth / naturalWidth,
-                heightScale,
-            );
+            const scale = Math.min(1, container.clientWidth / naturalWidth);
 
             art.style.transform = `translateX(-50%) scale(${scale})`;
             const scaledHeight = `${naturalHeight * scale}px`;

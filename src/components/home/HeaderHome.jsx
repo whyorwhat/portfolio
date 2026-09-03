@@ -25,7 +25,7 @@ export default function HeaderHome() {
                     </GradientText>
                 </div>
 
-                <AsciiWelcome className="row-start-2 max-h-[32svh] max-w-[22rem] sm:max-h-[36svh] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:max-h-none" />
+                <AsciiWelcome className="row-start-2 max-w-[22rem] lg:col-start-1 lg:row-span-2 lg:row-start-1" />
 
                 <div className="row-start-3 flex flex-wrap justify-center gap-6 lg:col-start-2 lg:row-start-2 lg:flex-nowrap lg:gap-4">
                     <FancyButton

@@ -14,9 +14,14 @@ export default function AppContent() {
     const location = useLocation();
     const hasProjectFooter = location.pathname === "/ti-seguo";
     const isHomePage = location.pathname === "/";
+    const isLightPage = location.pathname === "/replyia";
 
     return (
-        <div className="flex min-h-[100svh] flex-col bg-[var(--color-background)] font-sans text-slate-100">
+        <div className={`flex min-h-[100svh] flex-col font-sans ${
+            isLightPage
+                ? "bg-white text-slate-950 [color-scheme:light]"
+                : "bg-[var(--color-background)] text-slate-100"
+        }`}>
             <Navbar />
 
             <main className={isHomePage ? "flex flex-grow" : "flex-grow"}>
@@ -45,7 +50,7 @@ export default function AppContent() {
                 </Routes>
             </main>
 
-            {!hasProjectFooter && <Footer light={location.pathname === "/replyia"} />}
+            {!hasProjectFooter && <Footer light={isLightPage} />}
         </div>
     );
 }
