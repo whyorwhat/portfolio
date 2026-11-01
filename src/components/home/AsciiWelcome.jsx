@@ -45,7 +45,7 @@ export default function AsciiWelcome({ className = "" }) {
         >
             <pre
                 ref={artRef}
-                className="absolute left-1/2 top-0 m-0 w-max origin-top whitespace-pre text-left font-mono font-normal leading-none text-blue-200"
+                className="absolute left-1/2 top-0 m-0 w-max origin-top whitespace-pre text-left font-mono font-normal leading-none text-blue-200 light:text-blue-950"
                 style={{ fontSize: `${NATURAL_FONT_SIZE}px` }}
                 aria-hidden="true"
             >

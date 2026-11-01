@@ -8,7 +8,7 @@ const badgeSrc =
 
 return (
 <footer className="py-1 text-center">
-<p className={`font-mono text-[10px] leading-none ${light ? "text-gray-500" : "text-slate-500"}`}>
+<p className={`font-mono text-[10px] leading-none ${light ? "text-gray-500" : "text-slate-500 light:text-gray-500"}`}>
   &copy; {currentYear} Simone Cotardo All Rights Reserved.
 </p>
 <a

@@ -31,7 +31,7 @@ export default function WindowCard({
             variants={variants}
             custom={delay}
         >
-            <div className="flex h-full flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] shadow-lg shadow-black/20">
+            <div className="flex h-full flex-col rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] shadow-lg shadow-black/20 light:shadow-none">
                 {/* Window controls */}
                 <div className="flex items-center p-2.5">
                     <div className="px-1">

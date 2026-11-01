@@ -15,6 +15,8 @@ export default {
         },
     },
     plugins: [
-        require('@tailwindcss/typography')
+        require('@tailwindcss/typography'),
+        // `light:` utilities apply when <html class="light"> (dark is the default)
+        ({ addVariant }) => addVariant('light', '.light &'),
     ],
 }

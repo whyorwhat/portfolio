@@ -9,6 +9,7 @@ import TiSeguoView from "@/views/projects/TiSeguoView.jsx";
 import CustomerRadarView from "@/views/projects/CustomerRadarView.jsx";
 import ReplyiaView from "@/views/projects/ReplyiaView.jsx";
 import AnimateOnLang from "@/global/multiLang/AnimateOnLang.jsx";
+import ThemeToggle, {useThemeSync, isThemeExcluded} from "@/global/ThemeToggle.jsx";
 
 export default function AppContent() {
     const location = useLocation();
@@ -16,11 +17,14 @@ export default function AppContent() {
     const isHomePage = location.pathname === "/";
     const isLightPage = location.pathname === "/replyia";
 
+    useThemeSync();
+    const showThemeToggle = !isThemeExcluded(location.pathname);
+
     return (
         <div className={`flex min-h-[100svh] flex-col font-sans ${
             isLightPage
                 ? "bg-white text-slate-950 [color-scheme:light]"
-                : "bg-[var(--color-background)] text-slate-100"
+                : "bg-[var(--color-background)] text-slate-100 light:text-gray-800"
         }`}>
             <Navbar />
 
@@ -51,6 +55,7 @@ export default function AppContent() {
             </main>
 
             {!hasProjectFooter && <Footer light={isLightPage} />}
+            {showThemeToggle && <ThemeToggle />}
         </div>
     );
 }

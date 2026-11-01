@@ -24,6 +24,16 @@ html {
     background: var(--color-background);
 }
 
+html.light {
+    color-scheme: light;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-surface-raised: #f3f4f6;
+    --color-border: #d1d5db;
+    --color-text: #1f2937;
+    --color-text-muted: #4b5563;
+}
+
 ::selection {
     background: rgb(59 130 246 / 0.35);
     color: #fff;
